@@ -2,13 +2,14 @@
  * Created by Jerry on 16/1/31.
  */
     var scanResult;
-    function scanSong(nameSong){
+    function scanSongID(nameSong){
         var xmlhttp = new XMLHttpRequest();
-        nameSong = "好久不见"
-        xmlhttp.open("POST","http://s.music.163.com/search/get",true);
-        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-        xmlhttp.send("type=1&s="+ nameSong +"&limit=1&offset=0&callback=");
+        nameSong = "400875269"
+        xmlhttp.open("GET","http://music.163.com/api/song/detail/?id=["+nameSong+"]&ids=%5B["+nameSong+"]%5D",true);
+        xmlhttp.setRequestHeader("Cookie","appver=2.0.2");
+        xmlhttp.setRequestHeader("Referer","http://music.163.com");
+        xmlhttp.send();
         scanResult = eval("("+xmlhttp.responseText+")");
-        console.log("DO ONCE!");
+        console.log(xmlhttp.responseText);
     }
 
