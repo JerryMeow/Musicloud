@@ -1,0 +1,92 @@
+*{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+html{
+    height: 100%;
+    width: 100%;
+    min-height: 500px;
+    min-width: 500px;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background:url("bcg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#cardFront{
+    width: 298px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 15px 15px 15px rgba(0,0,0,.5);
+    margin-top: 10%;
+    margin-left: 20%;
+    display: inline-block;
+    border: white 1px solid;
+    border-radius: 47px;
+}
+.imgCD{
+    height: 300px;
+    width: 300px;
+    margin: 45px 0px 0px 0px;
+    display: inline-block;
+    z-index: -1;
+    position: absolute;
+}
+
+#aLine{
+    margin-left: 5px;
+    width:55px;
+    height: 1px;
+    background-color:#D0021B;
+    margin-top: 360px;
+}
+.nameSong{
+    margin-left: -1px;
+    margin-top: 15px;
+    color:#D0021B;
+    font-weight: 800;
+}
+.nameSinger{
+    margin-top: 10px;
+    color:#D0021B;
+    font-weight: 200;
+}
+.nameCD{
+    color:gray;
+    font-weight: 100;
+}
+.infoSong{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#triangle{
+    margin: 5px 0 0 9px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #ec0009;
+    border-bottom: 10px solid transparent;
+}
+#buttonPlayOrStop{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: solid 1px #ec0009;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+.functionArea{
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    margin-top: 295px;
+    margin-left: -1px;
+    background-image: linear-gradient(to top,rgba(200,200,200,.8), rgba(0,0,0,0));
+}
